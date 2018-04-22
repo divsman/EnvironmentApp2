@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AED6F1"
+    tools:context="com.dm.environmentapp.Profile">
+
+
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/sqaure"
+        android:scaleType="fitXY"
+        />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_marginTop="65dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/face"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back Zac!"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textSize="35dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="170dp"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Enter cubic feet of trash below!" />
+
+
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/button"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        android:text="show total energy saved"
+        android:layout_marginLeft="190dp"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/input"
+        android:text="Update Recycling"
+        android:onClick="displayTotal" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="goToHome"
+        android:text="Home" />
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button2"
+        android:layout_centerHorizontal="true"
+        android:text="MY CURRENT COUPONS"
+        android:onClick="goToCoupons"/>
+
+</RelativeLayout>

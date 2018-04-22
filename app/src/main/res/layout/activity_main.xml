@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AED6F1"
+    tools:context="com.dm.environmentapp.MainActivity">
+
+
+        <ImageView
+
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:layout_marginTop="33dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bettervine"
+            android:id="@+id/imageView" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="33dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bettervine"
+            android:id="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bettervine2" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout">
+
+            <Button android:id="@+id/btn_profile"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="PROFILE"
+                android:onClick="goToProfile"
+                android:layout_height="match_parent"/>
+            <Button android:id="@+id/btn_deposit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="DEPOSIT"
+                android:layout_height="match_parent"
+                android:onClick="goToDeposit"/>
+            <Button android:id="@+id/btn_progress"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="PROGRESS"
+                android:layout_height="match_parent"
+                android:onClick="goToProgress"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:textSize="45dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+
+            android:text="Tips of the Day" />
+
+
+    <TextView
+        android:id="@+id/editText4"
+        android:layout_width="275dp"
+        android:layout_height="100dp"
+
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:text="Tip #2:Pizza boxes can now be recycled – just dump out
+         the crumbs and cheese before recycling."
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="275dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Tip #1: Plastic bottle caps are usually recyclable along with the bottom"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="275dp"
+        android:layout_height="100dp" />
+
+
+</RelativeLayout>
